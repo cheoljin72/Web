@@ -1,0 +1,53 @@
+body {
+  margin: 0px;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.form-background {
+  background: #c2d3de;
+  height: 1000px;
+  width: 100%;
+  padding: 30px;
+}
+
+.cart-table {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  border-radius: 5px;
+}
+
+.cart-table th:nth-child(2) {
+  width: 400px;
+}
+
+.cart-table td, .cart-table th {
+  padding: 15px;
+  border-bottom: 1px solid #c2d3de;
+}
+
+.cell-long {
+  width: 700px;
+  text-align: left;
+}
+
+.text {
+height: 30px;
+width: 30%;
+}
+
+.button {
+  border-style: none;
+  border-radius: 5px;
+  padding: 15px;
+  background: #0f3970;
+  color: white;
+  width: 25%;
+  display: block;
+  margin-left: auto;
+  float: right;
+}
