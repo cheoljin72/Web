@@ -1,11 +1,13 @@
-.flex-item {
-  width: 100%;
-  height: 100px;
-  background-color: gray;
-  margin: 5px;
-  color: white;
+.nav-item {
+  margin-right: 10px;
+  
 }
 
-.flex-container {
+.nav-container {
+  background-color: indianred;
+  color: white;
+  height: 50px;
   display: flex;
+  align-items: center;
+  padding: 10px;
 }
