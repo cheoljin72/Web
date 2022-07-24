@@ -1,0 +1,70 @@
+@font-face {
+  font-family: '이쁜폰트';
+  src: url(font/NanumSquareR.ttf);
+}
+
+body {
+  margin: 0px;
+  font-family: '이쁜폰트';
+}
+
+.main-background {
+  width: 100%;
+  height: 500px;
+  background-image: url(/image/city.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 1px;
+  position: relative;
+}
+.main-title {
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  margin-top: 100px;
+}
+.main-text {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 100px;
+}
+.main-button {
+  padding: 5px;
+  font-size: 15px;
+  background: white;
+  border: none;
+  text-decoration: none;
+  border-radius: 10px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 70px;
+}
+.content {
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+background: cornsilk
+;
+width: 80%;
+max-width: 600px;
+position: relative;
+bottom: 120px;
+box-sizing: border-box;
+}
+
+@media screen and (max-width: 1200px) {
+.main-title {
+  font-size: 30px;
+  }
+
+}
+@media screen and (max-width: 768px) {
+  .main-title {
+    font-size: 20px;
+    }
+  
+  }
