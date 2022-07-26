@@ -11,24 +11,27 @@ body {
 .main-background {
   width: 100%;
   height: 500px;
-  background-image: url(/image/city.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url(/image/sky.png);
+  background-size: contain; /*사진 안짤리게 채우기*/
+  background-repeat: no-repeat; /*사진 반복 제거*/
+  background-position: center; /*배경 채우는 방향*/
+  background-position: top;
   padding: 1px;
-  position: relative;
+  position: relative; /*내 원래 위치 기준*/
+  filter: brightness(90%); /*밝기 조절*/
 }
 .main-title {
-  color: white;
-  font-size: 10px;
+  color: black;
+  font-size: 40px;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 20px;
+  padding: 0%;
 }
 .main-text {
-  color: white;
+  color: black;
   font-size: 15px;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .main-button {
   padding: 5px;
@@ -37,34 +40,35 @@ body {
   border: none;
   text-decoration: none;
   border-radius: 10px;
-  position: absolute;
-  right: 0;
-  left: 0;
+  position: absolute; /*부모 태그중 relative붙음 기준으로 움직임, 포지션 주면 공중에 뜸*/
+  right: 0; /*position 속성 부여 후 좌표 이동*/
+  left: 0; /*좌표 이동*/
   margin: auto;
-  width: 70px;
+  width: 80px;
 }
 .content {
+  border-radius: 50px;
   margin: auto;
-  padding: 20px;
+  margin-top: 45px;
+  padding: 5px;
   text-align: center;
-background: cornsilk
-;
-width: 80%;
-max-width: 600px;
-position: relative;
-bottom: 120px;
-box-sizing: border-box;
+  background:  ivory;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+  bottom: 200px;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 1200px) {
 .main-title {
-  font-size: 30px;
+  font-size: 40px;
   }
 
 }
 @media screen and (max-width: 768px) {
   .main-title {
-    font-size: 20px;
+    font-size: 30px;
     }
   
   }
