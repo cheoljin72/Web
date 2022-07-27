@@ -1,0 +1,31 @@
+
+div {
+  width: 25%;
+  box-sizing: border-box;
+  text-align: center;
+  float: left;
+}
+
+.product-container {
+  width: 100%;
+  max-width: 1000px;
+
+}
+
+.product-container i {
+  
+ text-align: center;
+ background-color: burlywood;
+ width: 100px;
+ height: 100px;
+ padding-top: 30px;
+ padding-right: 3px;
+ margin-top: 10px;
+ box-sizing: border-box;
+ border-radius: 50px;
+ color: white;
+}
+
+html {
+  line-height : 1.15; /*기본 행간 높이*/
+}
