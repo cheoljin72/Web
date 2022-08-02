@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -29,10 +29,10 @@
     </ul> 
     <script>
 
-      document.querySelector('.list-group') // 맨 위의 요소 한개만 찾아줌
+      document.querySelectorAll('.list-group-item')[2].innerHTML = '안녕'; 
 
-      document.getElementsByClassName('navbar-toggler')[0].addEventListener('click', function(){
-        document.getElementsByClassName('list-group')[0].classList.toggle('show');
+      document.querySelector('.navbar-toggler').addEventListener('click', function(){
+        document.querySelectorAll('.list-group')[0].classList.toggle('show');
       })
 
     </script>
