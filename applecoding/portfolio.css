@@ -5,7 +5,7 @@ div {
 .bg1-div {
   padding: 30px;
   color: white;
-  height: 500px;
+  height: 450px;
   width: 100%;
   text-align: left;
   background: linear-gradient(skyblue, purple);
@@ -34,6 +34,7 @@ button {
 .content3 {
   text-align: center;
   margin-top: 50px;
+  margin-bottom: 50px;
 } 
 
 .bg3-div {
@@ -74,3 +75,10 @@ body {
 html {
   line-height : 1.15; /*기본 행간 높이*/
 }
+
+.bg4-div {
+width: 100%;
+margin-bottom: 100px;
+}
+
+
