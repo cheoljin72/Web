@@ -1,0 +1,30 @@
+.box {
+  box-sizing: border-box;
+}
+
+.white-box {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0.5px 0.5px 2px 1px #eee;
+}
+
+.profile {
+  float: right;
+}
+
+.btn {
+  background-color: #6fbaf8;
+  color: white;
+  padding: 10px;
+  border-style: none;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+td {
+  font-weight: 600;
+  font-size: 15px;
+  padding: 10px;
+}
+
