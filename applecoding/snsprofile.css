@@ -14,17 +14,32 @@
 }
 
 .btn {
+  width: 100px;
   background-color: #6fbaf8;
   color: white;
-  padding: 10px;
+  padding: 5px;
   border-style: none;
   border-radius: 10px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
-td {
-  font-weight: 600;
-  font-size: 15px;
-  padding: 10px;
+.btn:hover {
+  color:#eee;
 }
 
+.pill {
+  display: inline-block;
+	border: 1px solid lightgray;
+	border-radius: 100px;
+	padding: 3px 12px 5px 12px;
+	margin-right: 2px;
+	margin-bottom: 5px; 
+}
+
+.right-menu {
+  text-align: center;
+}
+
+html {
+  line-height : 1.15; 
+}
