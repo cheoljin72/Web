@@ -1,0 +1,61 @@
+.first li {
+  list-style: none;
+  padding: 15px;
+  border-style: 1px solid #eee;
+}
+.first .active {
+  background: #6fbaf8;
+  color: white;
+}
+
+.well {
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding: 15px;
+  width: 100%;
+  background: greenyellow;
+  color: green;
+}
+
+.head {
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding: 15px;
+  width: 100%;
+  background: #6fbaf8;
+  color: blue;
+}
+
+.warn {
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding: 15px;
+  width: 100%;
+  background: orangered;
+  color: darkred;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.row .col-6 {
+  float: left;
+  margin-bottom: 100px;
+  padding: 15px;
+  width: 50%;
+}
+
+.row .col-4 {
+  float: left;
+  margin-bottom: 100px;
+  padding: 15px;
+  width: 33.33%;
+}
+
+.row .col-3 {
+  float: left;
+  margin-bottom: 100px;
+  padding: 15px;
+  width: 25%;
+}/*# sourceMappingURL=mixin.css.map */

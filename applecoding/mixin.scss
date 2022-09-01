@@ -1,0 +1,59 @@
+.first {
+  li{
+    list-style: none; // 앞에 점을 없애줌
+    padding: 15px;
+    border-style: 1px solid #eee;
+  }
+  .active {
+    background: #6fbaf8;
+    color: white;
+  }
+}
+
+@mixin design() {
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding: 15px;
+  width: 100%;
+} 
+
+.well {
+  @include design();
+  background: greenyellow;
+  color: green;
+}
+
+.head {
+  @include design();
+  background: #6fbaf8;
+  color: blue;
+}
+
+.warn {
+  @include design();
+  background: orangered;
+  color: darkred;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+@mixin align($per) {
+  float: left;
+  margin-bottom: 100px;
+  padding: 15px;
+  width: $per;
+}
+
+.row .col-6 {
+  @include align(50%);
+}
+
+.row .col-4 {
+  @include align(33.33%);
+}
+
+.row .col-3 {
+  @include align(25%);
+}
