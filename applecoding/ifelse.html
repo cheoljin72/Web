@@ -41,21 +41,31 @@
     });
 
     $('form').on('submit', function(e){
-      if(document.getElementById('email').value == '') {
-        e.preventDefault()//제출완료 페이지로 넘어가는 것 방지
-        alert('아이디 입력해라 마')
+      var 입력한값 = document.getElementById('email').value;
+      if(입력한값 == '') {
+        e.preventDefault();//제출완료 페이지로 넘어가는 것 방지
+        alert('아이디 입력해라 마');
+      }
+      if(/\S+@\S+.\S+/.test(입력한값)) {
+        alert('올바른 형식이 아닙니다');
+        e.preventDefault();
       }
     });
     $('form').on('submit', function(e){
-      if(document.getElementById('pw').value == '') {
-        e.preventDefault()
-        alert('비밀번호 입력해라 마')
+      var 비번 = document.getElementById('pw').value;
+      if(비번 == '') {
+        e.preventDefault();
+        alert('비밀번호 입력해라 마');
+      }
+      if(/[A-Z]/.test(비번) == false) {
+        e.preventDefault();
+        alert('대문자 없노');
       }
     });
     $('form').on('submit', function(e){
       if(document.getElementById('pw').value.length < 6) {
-        e.preventDefault()
-        alert('비밀번호는 6자 이상입니다.')
+        e.preventDefault();
+        alert('비밀번호는 6자 이상입니다.');
       }
     });
   </script>
