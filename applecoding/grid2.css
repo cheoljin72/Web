@@ -1,0 +1,42 @@
+div {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.grid-container div {
+  border: 1px solid black;
+}
+
+.grid-nav {
+  grid-area: 헤더
+}
+
+.grid-sidebar {
+  grid-area: 사이드
+}
+
+.grid-content {
+  grid-area: 내용
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 100px; 
+  grid-gap: 5px;
+  padding: 10px;
+  grid-template-areas:
+  "헤더 헤더 헤더 헤더"
+  "사이드 내용 내용 내용"
+  "사이드 내용 내용 내용"
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-areas: 
+    "헤더 헤더 헤더 헤더"
+    "사이드 사이드 사이드 사이드"
+    "내용 내용 내용 내용"
+  }
+}
