@@ -6,15 +6,27 @@
 
 // var 버튼 = $('.tab-button'); 더 빠름
 // 확장성을 잡고싶다면 i < $('.tab-button').length
-for(let i = 0; i < 3; i++) { // let을 싸야 한다.
-  $('.tab-button').eq(i).on('click', function(){
-    $('.tab-button').removeClass('orange');
-    $('.tab-button').eq(i).addClass('orange');
-    $('.tab-content').removeClass('show');
-    $('.tab-content').eq(i).addClass('show');
-  });
-}
 
+// for(let i = 0; i < 3; i++) { // let을 싸야 한다.
+//   $('.tab-button').eq(i).on('click', function(){
+//     openTap(i);
+//   });
+// }
+
+$('.list').click(function(e){
+  
+    openTap(e.target.dataset.id);
+  
+
+  
+});
+
+function openTap(num){
+  $('.tab-button').removeClass('orange');
+  $('.tab-button').eq(num).addClass('orange');
+  $('.tab-content').removeClass('show');
+  $('.tab-content').eq(num).addClass('show');
+}
 // $('.tab-button').eq(0).on('click', function(){
 //   $('.tab-button').removeClass('orange');
 //   $('.tab-button').eq(0).addClass('orange');
