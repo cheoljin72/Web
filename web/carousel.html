@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="carousel.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <div style="overflow: hidden">
+      <div class="slide-container">
+        <div class="slide-box">
+          <img src="/image/car1.png" draggable="false" />
+        </div>
+        <div class="slide-box">
+          <img src="/image/car2.png" />
+        </div>
+        <div class="slide-box">
+          <img src="/image/car3.png" />
+        </div>
+      </div>
+    </div>
+    <button class="before">이전</button>
+    <button class="slide-1">1</button>
+    <button class="slide-2">2</button>
+    <button class="slide-3">3</button>
+    <button class="next">다음</button>
+
+
+    <script>
+      var start = 0;
+      var isClick = false;
+      
+      $(".slide-box")
+        .eq(0)
+        .on("mousedown", function (e) {
+          start = e.clientX;
+          isClick = true;
+        });
+
+      $(".slide-box")
+        .eq(0)
+        .on("mousemove", function (e) {
+          if (isClick == true) {
+            $(".slide-container").css(
+              "transform",
+              `translateX(${e.clientX - start}px)`
+            );
+          }
+        });
+
+      $(".slide-box")
+        .eq(0)
+        .on("mouseup", function (e) {
+          isClick = false;
+        });
+
+      var 지금사진 = 1;
+      $(".next").on("click", function () {
+        if (지금사진 % 3 == 1) {
+          $(".slide-container").css("transform", "translateX(-100vw)");
+          지금사진 += 1;
+        } else if (지금사진 % 3 == 2) {
+          $(".slide-container").css("transform", "translateX(-200vw)");
+          지금사진 += 1;
+        } else {
+          // 지금사진 % 3 == 0
+          $(".slide-container").css("transform", "translateX(0vw)");
+          지금사진 += 1;
+        }
+      }); // 다음버튼 동작
+
+      $(".before").on("click", function () {
+        if (지금사진 % 3 == 0) {
+          $(".slide-container").css("transform", "translateX(-100vw)");
+          지금사진 += 1;
+        } else if (지금사진 % 3 == 2) {
+          $(".slide-container").css("transform", "translateX(-200vw)");
+          지금사진 += 1;
+        } else {
+          $(".slide-container").css("transform", "translateX(0vw)");
+          지금사진 += 1;
+        }
+      }); // 이전버튼 동작
+
+      $(".slide-1").on("click", function () {
+        $(".slide-container").css("transform", "translateX(0vw)");
+        지금사진 = 1;
+      });
+      $(".slide-2").on("click", function () {
+        $(".slide-container").css("transform", "translateX(-100vw)");
+        지금사진 = 2;
+      });
+      $(".slide-3").on("click", function () {
+        $(".slide-container").css("transform", "translateX(-200vw)");
+        지금사진 = 3;
+      }); // 1 2 3번 버튼 동작
+    </script>
+  </body>
+</html>
