@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>youtube mobile</title>
+  </head>
+  <body>
+    <header>
+      <!--상단바 flex로 좌우 정렬시킴-->
+      <div class="logo">
+        <!--좌측 로고-->
+        <i class="fa-brands fa-youtube"></i>
+        <span class="title"><strong>YouTube</strong></span>
+      </div>
+      <nav class="icons">
+        <!--우측 아이콘-->
+        <i class="fas fa-search"></i>
+        <i class="fa-sharp fa-solid fa-tv"></i>
+        <i class="fas fa-ellipsis-v"></i>
+      </nav>
+    </header>
+
+    <section class="player">
+      <!--동영상-->
+      <video controls src="/image/KakaoTalk_20220928_131825313.mp4"></video>
+    </section>
+    <!--설명란-->
+    <section class="info">
+      <div class="metadata">
+        <ul class="hashtags">
+          <li>#DreamCoding</li>
+          <li>#DreamCoders</li>
+          <li>#Cheoljin</li>
+        </ul>
+        <div class="titleAndButton">
+          <h4 class="title clamp">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+            molestias assumenda pariatur corrupti aliquam Lorem ipsum dolor, sit
+            amet consectetur adipisicing elit.
+          </h4>
+          <button class="moreBtn"><i class="fas fa-chevron-down"></i></button>
+        </div>
+        <span class="views">1M views 1 month ago</span>
+      </div>
+
+      <ul class="actions">
+        <li>
+          <button><i class="fas fa-thumbs-up"></i><span>12</span></button>
+        </li>
+        <li>
+          <button><i class="fas fa-thumbs-down"></i><span>12</span></button>
+        </li>
+        <li>
+          <button><i class="fas fa-share"></i><span></span>Share</button>
+        </li>
+        <li>
+          <button><i class="fas fa-plus"></i><span>Plus</span></button>
+        </li>
+        <li>
+          <button><i class="fas fa-flag"></i><span>Report</span></button>
+        </li>
+      </ul>
+      <hr />
+      <div class="channel">
+        <div class="metadata">
+          <img src="/image/cheoljin.jpg" />
+          <div class="info">
+            <p class="name">cheoljin 철진</p>
+            <p class="subscribers">100만명의 구독자 보유</p>
+          </div>
+        </div>
+        <button class="subscribe">subscribe</button>
+      </div>
+      <hr />
+    </section>
+
+    <section class="UpNext">
+      <span class="title">Up Next</span>
+      <ul>
+        <li class="item">
+          <img src="/image/thumbnail.jpg" />
+          <div class="info">
+            <span class="title"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+            </span>
+            <h5 class="name">철진 cheoljin</h5>
+            <span class="views">82K views</span>
+          </div>
+          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+        </li>
+        <li class="item">
+          <img src="/image/thumbnail.jpg" />
+          <div class="info">
+            <span class="title"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit.</span
+            >
+            <h5 class="name">철진 cheoljin</h5>
+            <span class="views">82K views</span>
+          </div>
+          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+        </li>
+        <li class="item">
+          <img src="/image/thumbnail.jpg" />
+          <div class="info">
+            <span class="title"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit.</span
+            >
+            <h5 class="name">철진 cheoljin</h5>
+            <span class="views">82K views</span>
+          </div>
+          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+        </li>
+      </ul>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/a08797ddfa.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

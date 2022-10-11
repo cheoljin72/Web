@@ -1,0 +1,216 @@
+:root {
+  /* color*/
+  --white-color: #fff;
+  --black-color: #140a00;
+  --blue-color: #045fd4;
+  --red-color: #ff0000;
+  --gray-dark-color: #909090;
+  --gray-light-color: #e0e0e0;
+  /* size */
+  --padding: 12px;
+  --avatar-size: 36px;
+  /*font size*/
+  --font-large: 18px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+* { /* 기본 여백 설정 */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  }
+
+header { /*상단바*/
+  display: flex;
+  justify-content: space-between;
+  background: var(--black-color);
+  padding: var(--padding);
+  color: var(--white-color);
+  }
+
+header .logo { /*좌측 로고*/
+  cursor: pointer;
+  font-size: var(--font-large);
+  }
+
+header .logo i { /*아이콘 색상*/
+  color: var(--red-color);
+  }
+
+header nav i {/*우측 아이콘*/
+  cursor: pointer;
+  font-size: var(--font-large);
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 10px;
+  }
+
+header .icons .fa-ellipsis-v { /*아이콘 사이 간격 조절*/
+  margin-right: var(--padding);
+  }
+
+.player { /*비디오 플레이어 상단 고정*/
+  text-align: center;
+  background: var(--black-color);
+  /* position: sticky; */
+  top: 0;
+}
+
+.player video {
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+  }
+
+.metadata {
+  padding: var(--padding);
+}
+
+.hashtags li { /*해시태그 속성*/
+  color: var(--blue-color);
+  display:inline;
+  list-style: none;
+}
+
+.info .metadata .titleAndButton { /*더보기버튼 위치*/
+  display: flex;
+}
+
+.info .metadata .titleAndButton .title {
+  font-size: var(--font-medium);
+}
+
+.info .metadata .titleAndButton .title.clamp{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.hashtags li:hover {
+  cursor: pointer;
+}
+
+button,
+button:focus {
+  background: none;
+  border-style: none;
+  cursor: pointer;
+}
+
+.info .metadata .titleAndButton .moreBtn {
+  height: 100%; /*더보기 버튼 상단 위치*/
+  transition: all 0.5s;
+}
+
+.info .metadata .titleAndButton .moreBtn.clicked {
+  transform: rotate(180deg); /*회전 애니메이션*/
+}
+
+.views {
+  font-size: var(--font-small);
+  color: var(--gray-dark-color);
+}
+
+.actions {
+  display: flex;
+  justify-content: space-around;
+  margin: var(--padding) 0;
+}
+
+.actions button {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-small);
+}
+
+.actions button i {
+  margin: 0 auto;
+  margin-bottom: calc(var(--padding)/2);
+}
+
+.actions  li {
+  list-style: none;
+  background: none;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding);
+  margin: auto;
+}
+
+.actions li button {
+  font-size: var(--font-large);
+  color: var(--gray-dark-color);
+  border-style: none;
+  background: none;
+}
+
+.actions li button:hover {
+  cursor: pointer;
+}
+
+.fa-thumbs-up {
+  color: var(--blue-color);
+}
+
+.channel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.metadata img {
+  vertical-align: top;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.item img {
+  width: 300px;
+}
+
+.metadata .info {
+  display: inline-block;
+}
+
+.subscribe {
+  font-size: var(--font-large);
+  height: 20px;
+  margin-top: 20px;
+  margin-right: 5px;
+  border: 1px solid var(--gray-light-color);
+  color: var(--red-color);
+}
+
+.UpNext .title {
+  font-size: var(--font-small);
+  margin-left: var(--padding);
+}
+
+.UpNext li img {
+  margin-top: var(--padding);
+  height: 100%;
+}
+
+.UpNext li {
+  display: flex;
+  width: 500px;
+  margin-left: var(--padding);
+} 
+
+.UpNext .info {
+  margin-top: var(--padding);
+  margin-left: var(--padding);
+}
+
+.UpNext .info .title {
+  font-size: var(--font-large);
+  margin-left: 0;
+}
+
+.UpNext .moreBtn {
+  margin-left: 10px;
+  margin-top: 7px;
+  height: 100%;
+}
