@@ -108,7 +108,7 @@ button:focus {
   transform: rotate(180deg); /*회전 애니메이션*/
 }
 
-.views {
+.views, .name {
   font-size: var(--font-small);
   color: var(--gray-dark-color);
 }
@@ -140,7 +140,7 @@ button:focus {
 }
 
 .actions li button {
-  font-size: var(--font-large);
+  font-size: var(--font-medium);
   color: var(--gray-dark-color);
   border-style: none;
   background: none;
@@ -167,7 +167,7 @@ button:focus {
 }
 
 .item img {
-  width: 300px;
+  width: 50%;
 }
 
 .metadata .info {
@@ -190,13 +190,13 @@ button:focus {
 
 .UpNext li img {
   margin-top: var(--padding);
+  margin-left: var(--padding);
   height: 100%;
 }
 
 .UpNext li {
   display: flex;
-  width: 500px;
-  margin-left: var(--padding);
+  justify-content: space-between;
 } 
 
 .UpNext .info {
@@ -210,7 +210,7 @@ button:focus {
 }
 
 .UpNext .moreBtn {
-  margin-left: 10px;
-  margin-top: 7px;
+  margin-right: var(--padding);
+  margin-top: 20px;
   height: 100%;
 }
