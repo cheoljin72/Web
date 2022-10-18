@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 60px;
+  letter-spacing: -12px;
+}
+
+.title :nth-child(1), .title :nth-child(4) {
+  color: #4285F4;
+}
+.title :nth-child(2), .title :nth-child(6) {
+  color: #EA4335;
+}
+.title :nth-child(3) {
+  color: #FCC629;
+}
+.title :nth-child(5) {
+  color: #34A853;
+}
+
+.text {
+  border-radius: 20px;
+  border: 1px solid #DFE1E5;
+  height: 35px;
+  width: 500px;
+  display: block;
+  margin: 10px auto;
+}
+
+.search-brn {
+  text-align: center;
+}
