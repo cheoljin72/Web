@@ -5,8 +5,8 @@
 .title {
   text-align: center;
   margin-top: 100px;
-  font-size: 60px;
-  letter-spacing: -12px;
+  font-size: 100px;
+  letter-spacing: -20px;
 }
 
 .title :nth-child(1), .title :nth-child(4) {
@@ -22,6 +22,31 @@
   color: #34A853;
 }
 
+.nav-bar ul {
+  justify-content: flex-end;
+  display: flex;
+  list-style: none;
+}
+
+.nav-bar ul:hover {
+  cursor: pointer;
+}
+
+.underLine:hover {
+  text-decoration: underline;
+}
+
+.nav-bar ul li {
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+.profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
 .text {
   border-radius: 20px;
   border: 1px solid #DFE1E5;
@@ -29,8 +54,17 @@
   width: 500px;
   display: block;
   margin: 10px auto;
+  padding: 15px;
 }
 
-.search-brn {
+.search-btn {
   text-align: center;
+}
+
+button {
+  border-style: none;
+}
+
+.item-list {
+  display: flex;
 }

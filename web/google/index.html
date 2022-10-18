@@ -12,8 +12,18 @@
     <title>Coogle</title>
   </head>
   <body>
+    <nav class="nav-bar">
+      <ul>
+        <!--li 사이 간격을 넓히고 싶다.
+      => li 항목의 마진을 조절하면 된다.-->
+        <li class="underLine">Gmail</li>
+        <li class="underLine">이미지</li>
+        <li><i class="fas fa-bars"></i></li>
+        <li><img class="profile" src="/image/cheoljin.jpg" /></li>
+      </ul>
+    </nav>
     <div class="title">
-      <span>c</span>
+      <span>C</span>
       <span>o</span>
       <span>o</span>
       <span>g</span>
@@ -21,12 +31,17 @@
       <span>e</span>
     </div>
     <div class="search-bar">
-      <i class="fas fa-search-plus"></i>
-      <input class="text" type="text" placeholder="coogle 검색 또는 URL 입력" />
-      <div class="search-brn">
-        <button class="search" type="button">coogle 검색</button>
-        <button>I'm feeling lucky</button>
-      </div>
+      <!--텍스트 인풋 왼쪽편에 돋보기 아이콘을 넣고싶습니다! - 해결중... => input에 padding 주기,
+      아이콘 배치는 position 활용해보자!
+      -->
+      <input class="text" type="text" placeholder="Coogle 검색 또는 URL 입력" />
+    </div>
+    <div class="search-btn">
+      <button class="search">Coogle 검색</button>
+      <button>I'm really lucky</button>
+    </div>
+    <div class="item-list">
+      <p>아이콘 10개 검정 원 배경안에 아이콘 추가</p>
     </div>
   </body>
 </html>
