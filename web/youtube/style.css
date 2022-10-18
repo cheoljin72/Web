@@ -90,6 +90,7 @@ header .icons .fa-ellipsis-v { /*아이콘 사이 간격 조절*/
 
 .hashtags li:hover {
   cursor: pointer;
+  color: #909090;
 }
 
 button,
