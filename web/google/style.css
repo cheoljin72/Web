@@ -26,6 +26,7 @@
   justify-content: flex-end;
   display: flex;
   list-style: none;
+  align-items: center;
 }
 
 .nav-bar ul:hover {
@@ -47,14 +48,25 @@
   border-radius: 50%;
 }
 
-.text {
+.search-bar {
+  position: relative;
+  text-align: center;
+}
+
+.fa-search {
+  color: gray;
+  position: absolute;
+  left: 15px;
+  top: 30px;
+}
+
+.text-bar {
   border-radius: 20px;
   border: 1px solid #DFE1E5;
   height: 35px;
-  width: 500px;
-  display: block;
-  margin: 10px auto;
-  padding: 15px;
+  width: 100%;
+  margin: 20px auto;
+  padding-left: 40px;
 }
 
 .search-btn {
@@ -62,9 +74,14 @@
 }
 
 button {
+  vertical-align: middle;
   border-style: none;
+  padding: 5px;
+  height: 35px;
 }
 
-.item-list {
+.item-list ul {
   display: flex;
+  justify-content: center;
+  list-style: none;
 }

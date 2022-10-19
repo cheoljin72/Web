@@ -15,13 +15,14 @@
     <nav class="nav-bar">
       <ul>
         <!--li 사이 간격을 넓히고 싶다.
-      => li 항목의 마진을 조절하면 된다.-->
+          => li 항목의 마진을 조절하면 된다.-->
         <li class="underLine">Gmail</li>
         <li class="underLine">이미지</li>
         <li><i class="fas fa-bars"></i></li>
         <li><img class="profile" src="/image/cheoljin.jpg" /></li>
       </ul>
     </nav>
+
     <div class="title">
       <span>C</span>
       <span>o</span>
@@ -31,17 +32,36 @@
       <span>e</span>
     </div>
     <div class="search-bar">
-      <!--텍스트 인풋 왼쪽편에 돋보기 아이콘을 넣고싶습니다! - 해결중... => input에 padding 주기,
+      <!--플레이스 홀더 왼쪽 여백주기 => padding-left로 해결!-->
+      <!--텍스트 인풋 왼쪽편에 돋보기 아이콘을 넣고싶습니다! - 해결중... => 
       아이콘 배치는 position 활용해보자!
+      아이콘은 넣었는데 창을 키울 때 아이콘이 자꾸 벗어난다.
+      => text-bar에 width를 100%로 설정하고 부모 div에 relative, 아이콘에 absolute 주어 해결
+      ?? 검색창 길이를 일정하게 하면서 아이콘도 같이 유지를 시키고 싶다!
       -->
-      <input class="text" type="text" placeholder="Coogle 검색 또는 URL 입력" />
+      <input
+        class="text-bar"
+        type="text"
+        placeholder="Coogle 검색 또는 URL 입력"
+      />
+      <i class="fas fa-search"></i>
     </div>
     <div class="search-btn">
       <button class="search">Coogle 검색</button>
       <button>I'm really lucky</button>
+      <!-- 2번째 버튼이 살짝 아래로 내려가 있어 살짝 위로 올려야한다. => heigth을 같게 한 후 vertical-align: middle로 해결!-->
     </div>
     <div class="item-list">
-      <p>아이콘 10개 검정 원 배경안에 아이콘 추가</p>
+      <ul>
+        <li>d</li>
+        <li>d</li>
+        <li>d</li>
+        <li>d</li>
+        <li>d</li>
+        <li>d</li>
+        <li>d</li>
+        <li>d</li>
+      </ul>
     </div>
   </body>
 </html>
