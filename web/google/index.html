@@ -31,20 +31,18 @@
       <span>l</span>
       <span>e</span>
     </div>
-    <div class="search-bar">
+    <div class="outer">
       <!--플레이스 홀더 왼쪽 여백주기 => padding-left로 해결!-->
       <!--텍스트 인풋 왼쪽편에 돋보기 아이콘을 넣고싶습니다! - 해결중... => 
       아이콘 배치는 position 활용해보자!
       아이콘은 넣었는데 창을 키울 때 아이콘이 자꾸 벗어난다.
-      => text-bar에 width를 100%로 설정하고 부모 div에 relative, 아이콘에 absolute 주어 해결
-      ?? 검색창 길이를 일정하게 하면서 아이콘도 같이 유지를 시키고 싶다!
-      -->
-      <input
-        class="text-bar"
-        type="text"
-        placeholder="Coogle 검색 또는 URL 입력"
-      />
-      <i class="fas fa-search"></i>
+      => text-bar에 width를 100%로 설정하고 부모 div에 relative, 아이콘에 absolute 주어 해결!-->
+      <!--검색창 길이를 일정하게 하면서 아이콘도 같이 유지를 시키고 싶다! => 검색창 길이는 max-width를 주어 해결-->
+
+      <input type="text" placeholder="Coogle 검색 또는 URL 입력" />
+      <div class="searching">
+        <i class="fas fa-search"></i>
+      </div>
     </div>
     <div class="search-btn">
       <button class="search">Coogle 검색</button>
@@ -54,21 +52,45 @@
     <div class="icon">
       <a class="tile" href="#">
         <div class="bg">
-          <img src="/google/images/js.png" />
+          <img src="/google/images/apple.png" />
         </div>
-        <span class="icon-title">자바스크립트</span>
+        <span class="icon-title">애플</span>
       </a>
       <a class="tile" href="#">
         <div class="bg">
-          <img src="/google/images/js.png" />
+          <img src="/google/images/facebook.png" />
         </div>
-        <span class="icon-title">자바스크립트</span>
+        <span class="icon-title">페이스북</span>
       </a>
       <a class="tile" href="#">
         <div class="bg">
-          <img src="/google/images/js.png" />
+          <img src="/google/images/figma.png" />
         </div>
-        <span class="icon-title">자바스크립트</span>
+        <span class="icon-title">피그마</span>
+      </a>
+      <a class="tile" href="#">
+        <div class="bg">
+          <img src="/google/images/google.png" />
+        </div>
+        <span class="icon-title">구글</span>
+      </a>
+      <a class="tile" href="#">
+        <div class="bg">
+          <img src="/google/images/html-5.png" />
+        </div>
+        <span class="icon-title">HTML5</span>
+      </a>
+      <a class="tile" href="#">
+        <div class="bg">
+          <img src="/google/images/instagram.png" />
+        </div>
+        <span class="icon-title">인스타그램</span>
+      </a>
+      <a class="tile" href="#">
+        <div class="bg">
+          <img src="/google/images/youtube.png" />
+        </div>
+        <span class="icon-title">유튜브</span>
       </a>
       <a class="tile" href="#">
         <div class="bg">
