@@ -16,6 +16,11 @@
   padding: 0;
 }
 
+p {
+  font-size: var(--font-small);
+  font-weight: 600;
+}
+
 header {
   margin: var(--font-large);
   display: flex;
@@ -65,14 +70,17 @@ main {
 
 .title {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 700;
   letter-spacing: -3px;
+  width: 100%;
 }
 
 .search span {
+  margin-left: 70px;
   font-size: var(--font-small);
   color: gray;
 }
@@ -92,37 +100,141 @@ main {
 }
 
 .flex-container {
+  margin: auto;
   margin-top: 30px;
-  max-width: 100%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-img {
-  width: 276px;
-  height: 276px;
-  border-radius: 15px;
+.item1 {
+  color: white;
+  text-decoration: none;
 }
 
-.item1 img {
+.bg1 {
+  background-image: url(/kolon/images/RiotX_ChampionList_garen.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
   width: 582px;
   height: 582px;
 }
 
-.item1 {
+.text1 {
+  padding-top: 400px;
+  padding-left: 15px;
+  width: 350px;
 }
 
 .item2 {
+  height: 276px;
+  color: white;
+  text-decoration: none;
 }
 
-.item3 img {
-  width: 888px;
-  height: 445px;
+.bg2 {
+  background-image: url(/kolon/images/RiotX_ChampionList_twistedfate.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  width: 276px;
+  height: 276px;
 }
-.item3 {
-  margin-top: 20px;
+
+.text2 {
+  padding-left: 5px;
+  padding-top: 130px;
+  width: 180px;
+}
+
+.bg3 {
+  margin-top: 30px;
+  background-image: url(/kolon/images/RiotX_ChampionList_yasuo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  width: 276px;
+  height: 276px;
+}
+
+.text3 {
+  padding-left: 5px;
+  padding-top: 160px;
+  width: 170px;
 }
 
 .item4 {
+  color: white;
+  text-decoration: none;
+}
+
+.bg4 {
+  margin-top: 20px;
+  background-image: url(/kolon/images/Seraphine_0.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  width: 880px;
+  height: 445px;
+}
+
+.text4 {
+  padding-top: 350px;
+  padding-left: 15px;
+  width: 350px;
+}
+
+.flex2-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.item2-1,
+.item2-2,
+.item2-3,
+.item2-4 {
+  width: 429px;
+  height: 400px;
+  background: var(--color);
+  margin: 25px 15px 10px 15px;
+  border-radius: 15px;
+}
+.item2-1,
+.item2-3 {
+  width: 429px;
+  height: 400px;
+  background: var(--color);
+}
+
+.item2-3 {
+  background: white;
+  border: 1px solid lightgray;
+}
+
+.flex2-container button {
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  width: 80px;
+  height: 30px;
+  margin-left: 20px;
+  background: white;
+  color: #0078c3;
+  border-style: none;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+  nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
 }
