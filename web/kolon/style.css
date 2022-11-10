@@ -99,7 +99,7 @@ main {
   letter-spacing: -1px;
 }
 
-.flex-container {
+.outer-container {
   margin: auto;
   margin-top: 30px;
   width: 100%;
@@ -128,6 +128,13 @@ main {
   width: 350px;
 }
 
+.inner-container {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .item2 {
   height: 276px;
   color: white;
@@ -149,8 +156,13 @@ main {
   width: 180px;
 }
 
-.bg3 {
+.item3 {
+  color: white;
+  text-decoration: none;
   margin-top: 30px;
+}
+
+.bg3 {
   background-image: url(/kolon/images/RiotX_ChampionList_yasuo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -166,17 +178,17 @@ main {
 }
 
 .item4 {
+  margin-top: 20px;
   color: white;
   text-decoration: none;
 }
 
 .bg4 {
-  margin-top: 20px;
   background-image: url(/kolon/images/Seraphine_0.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 15px;
-  width: 880px;
+  width: 878px;
   height: 445px;
 }
 
