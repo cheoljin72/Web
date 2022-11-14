@@ -39,6 +39,7 @@ header span {
 }
 
 nav ul {
+  cursor: pointer;
   display: flex;
   list-style: none;
   font-size: var(--font-small);
@@ -73,7 +74,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  font-size: 35px;
+  font-size: 36px;
   font-weight: 700;
   letter-spacing: -3px;
   width: 100%;
@@ -102,6 +103,7 @@ main {
 .outer-container {
   margin: auto;
   margin-top: 30px;
+  max-width: 1200px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -138,21 +140,6 @@ main {
   padding-left: 15px;
   width: 320px;
 }
-.text2 {
-  position: absolute;
-  z-index: 2;
-  color: white;
-  padding-left: 15px;
-  margin-top: -170px;
-}
-
-.text3 {
-  position: absolute;
-  z-index: 2;
-  color: white;
-  padding-left: 15px;
-  margin-top: -170px;
-}
 
 .inner-container {
   margin: 0;
@@ -182,14 +169,18 @@ main {
 }
 
 .text2 {
+  position: absolute;
+  z-index: 2;
   color: white;
   padding-left: 15px;
-  width: 180px;
-  margin-top: -140px;
+  margin-top: -170px;
+  width: 140px;
 }
 
 /* 3번 박스 효과 */
 .item3 {
+  overflow: hidden;
+  border-radius: 15px;
   height: 276px;
   height: 276px;
   text-decoration: none;
@@ -197,43 +188,57 @@ main {
 }
 
 .img3 {
-  border-radius: 15px;
   width: 276px;
   height: 276px;
 }
 
+.img3:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
 .text3 {
+  position: absolute;
+  z-index: 2;
   color: white;
-  padding-left: 15px;
   width: 170px;
+  padding-left: 15px;
   margin-top: -130px;
 }
 
 /* 4번 박스 효과 */
 .item4 {
-  margin: 0 10px;
+  width: 884px;
+  height: 445px;
+  overflow: hidden;
+  border-radius: 15px;
   margin-top: 20px;
   color: white;
   text-decoration: none;
 }
 
-.bg4 {
-  background-image: url(/kolon/images/Seraphine_0.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+.img4 {
   border-radius: 15px;
-  width: 878px;
+  width: 884px;
   height: 445px;
 }
 
+.img4:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
 .text4 {
-  padding-top: 350px;
+  position: absolute;
+  margin-top: -100px;
   padding-left: 15px;
   width: 350px;
+  z-index: 2;
 }
 
 /* 2번째 flexbox 박스 */
 .flex2-container {
+  max-width: 1000px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -273,23 +278,23 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 25px 15px 90px 15px;
+  margin: 25px 30px 90px 30px;
 }
 
 .slide-btn {
   font-size: 20px;
-  cursor: pointer;
   color: gray;
   display: flex;
   justify-content: space-evenly;
 }
 
-.text2-3 i {
-  font-size: 20px;
+.slide-btn span {
+  cursor: pointer;
+  margin-left: 20px;
 }
 
 .stock-content {
-  margin: 25px 15px 10px 15px;
+  margin: 5px 20px;
 }
 
 .text2-4 {
@@ -324,9 +329,34 @@ main {
   border-radius: 15px;
 }
 
+.more-bar {
+  text-align: center;
+  margin: 20px auto;
+  background: #ebf0f7;
+  border: 1px solid #ebf0f7;
+  border-radius: 20px;
+  width: 888px;
+  height: 50px;
+}
+
+.more-bar:hover {
+  transition: all 0.5s;
+  background: #dcdfe3;
+  border: 1px solid #dcdfe3;
+}
+
 @media screen and (max-width: 1200px) {
   nav {
     display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 914px) {
+  .item2 {
+    margin-top: 30px;
   }
 }
 
